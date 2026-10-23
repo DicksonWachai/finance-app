@@ -16,6 +16,8 @@ app.use(
   require('./routes/auth')
 );
 
+app.use('/api/businesses', require('./routes/businesses'));
+
 // Catch-all error handler (keep this near the bottom, above app.listen)
 app.use((err, req, res, next) => {
   console.error(err);
